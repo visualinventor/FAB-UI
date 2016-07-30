@@ -26,7 +26,7 @@ class Jog extends Module {
 			$units = json_decode(file_get_contents($this -> config -> item('fabtotum_custom_config_units', 'fabtotum')), TRUE);
 		}
         
-        $data['max_temp'] = isset($units['hardware']['head']['max_temp']) ? $units['hardware']['head']['max_temp'] : 230;
+        $data['max_temp'] = isset($units['hardware']['head']['max_temp']) ? $units['hardware']['head']['max_temp'] : 250;
 		
 		$css_in_page = $this->load->view('index/css', '', TRUE);
 		$js_in_page  = $this->load->view('index/js', $data, TRUE);
