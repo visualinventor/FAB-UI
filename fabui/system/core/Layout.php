@@ -29,7 +29,7 @@ class FT_Layout {
 
 	protected $_show_feeder = true;
 	protected $_show_nozzle_temp = true;
-	protected $_max_temp = 230;
+	protected $_max_temp = 250;
 
 	protected $_ci;
 
